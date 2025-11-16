@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #212121, #0f0f3a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    width: 450px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4d79ff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3558e8;
+    transform: scale(1.03);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    display: none;
+    font-size: 18px;
+    font-weight: 600;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.safe {
+    background-color: rgba(0, 200, 83, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.5);
+}
+
+.malicious {
+    background-color: rgba(255, 0, 0, 0.85);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
